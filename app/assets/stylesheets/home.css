@@ -1,0 +1,14 @@
+.notice {
+  background-color: rgb(40, 193, 255);
+  border: 1px solid blue;
+}
+
+.error {
+  background-color: rgb(251, 247, 238);
+  border: 1px solid red;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+}

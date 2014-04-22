@@ -1,0 +1,15 @@
+<h1>Showing <%= @rolodex.name %></h1>
+<hr>
+<%= @rolodex.phone_number %>
+<br>
+<%= @rolodex.email %>
+<br>
+<%= @rolodex.display_address.html_safe %>
+<br>
+Is this guy cool? <%= @rolodex.is_cool %>
+<br>
+<%= @rolodex.gender.try(:capitalize) %>
+<br>
+<%= @rolodex.description %>
+<br>
+<%= link_to 'Home', root_path %><br>

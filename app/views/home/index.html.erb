@@ -1,0 +1,13 @@
+<h1>Hey man</h1>
+
+<%=link_to 'Create Contact',  new_rolodex_path %>
+<br>
+
+<% @rolodexes.each do |rolodex| %>
+  <%= link_to "#{rolodex.name}", rolodex_path(rolodex) %>
+  <!-- <a href="/rolodexes/<%= rolodex.id%>"> Look at this link</a> -->
+  <%= link_to 'Edit', edit_rolodex_path(rolodex) %>
+  |
+  <%= link_to 'Delete', rolodex_path(rolodex), method: :destroy %>
+  <br>
+<% end %>
